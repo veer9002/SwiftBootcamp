@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1D502221F2E434009D3DA6 /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501B21F2E434009D3DA6 /* note4.wav */; };
+		BD1D502321F2E434009D3DA6 /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501C21F2E434009D3DA6 /* note6.wav */; };
+		BD1D502421F2E434009D3DA6 /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501D21F2E434009D3DA6 /* note1.wav */; };
+		BD1D502521F2E434009D3DA6 /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501E21F2E434009D3DA6 /* note5.wav */; };
+		BD1D502621F2E434009D3DA6 /* note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501F21F2E434009D3DA6 /* note2.wav */; };
+		BD1D502721F2E434009D3DA6 /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D502021F2E434009D3DA6 /* note3.wav */; };
+		BD1D502821F2E434009D3DA6 /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D502121F2E434009D3DA6 /* note7.wav */; };
+		BD1D502A21F2E455009D3DA6 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D502921F2E455009D3DA6 /* MusicViewController.swift */; };
 		BD8CDF1121E1F7F800D0FFFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CDF1021E1F7F800D0FFFF /* AppDelegate.swift */; };
-		BD8CDF1321E1F7F900D0FFFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CDF1221E1F7F900D0FFFF /* ViewController.swift */; };
 		BD8CDF1621E1F7F900D0FFFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8CDF1421E1F7F900D0FFFF /* Main.storyboard */; };
 		BD8CDF1821E1F7FA00D0FFFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8CDF1721E1F7FA00D0FFFF /* Assets.xcassets */; };
 		BD8CDF1B21E1F7FA00D0FFFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8CDF1921E1F7FA00D0FFFF /* LaunchScreen.storyboard */; };
+		BD8CDF2721E2193300D0FFFF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CDF2621E2193300D0FFFF /* Question.swift */; };
+		BD8CDF2921E2194C00D0FFFF /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CDF2821E2194C00D0FFFF /* QuestionBank.swift */; };
+		BD8CDF2B21E21ACE00D0FFFF /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CDF2A21E21ACE00D0FFFF /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD1D501B21F2E434009D3DA6 /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
+		BD1D501C21F2E434009D3DA6 /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
+		BD1D501D21F2E434009D3DA6 /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
+		BD1D501E21F2E434009D3DA6 /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
+		BD1D501F21F2E434009D3DA6 /* note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note2.wav; sourceTree = "<group>"; };
+		BD1D502021F2E434009D3DA6 /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
+		BD1D502121F2E434009D3DA6 /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
+		BD1D502921F2E455009D3DA6 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		BD8CDF0D21E1F7F800D0FFFF /* SwiftBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8CDF1021E1F7F800D0FFFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD8CDF1221E1F7F900D0FFFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD8CDF1521E1F7F900D0FFFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD8CDF1721E1F7FA00D0FFFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8CDF1A21E1F7FA00D0FFFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8CDF1C21E1F7FA00D0FFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8CDF2621E2193300D0FFFF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		BD8CDF2821E2194C00D0FFFF /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		BD8CDF2A21E21ACE00D0FFFF /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +55,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD1D501621F2E3B3009D3DA6 /* MusicApp */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D501A21F2E411009D3DA6 /* MusicFiles */,
+				BD1D501921F2E3CD009D3DA6 /* Controller */,
+			);
+			path = MusicApp;
+			sourceTree = "<group>";
+		};
+		BD1D501921F2E3CD009D3DA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D502921F2E455009D3DA6 /* MusicViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD1D501A21F2E411009D3DA6 /* MusicFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D501D21F2E434009D3DA6 /* note1.wav */,
+				BD1D501F21F2E434009D3DA6 /* note2.wav */,
+				BD1D502021F2E434009D3DA6 /* note3.wav */,
+				BD1D501B21F2E434009D3DA6 /* note4.wav */,
+				BD1D501E21F2E434009D3DA6 /* note5.wav */,
+				BD1D501C21F2E434009D3DA6 /* note6.wav */,
+				BD1D502121F2E434009D3DA6 /* note7.wav */,
+			);
+			path = MusicFiles;
+			sourceTree = "<group>";
+		};
 		BD8CDF0421E1F7F800D0FFFF = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +105,49 @@
 		BD8CDF0F21E1F7F800D0FFFF /* SwiftBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				BD1D501621F2E3B3009D3DA6 /* MusicApp */,
+				BD8CDF2221E218F200D0FFFF /* QuizApp */,
 				BD8CDF1021E1F7F800D0FFFF /* AppDelegate.swift */,
-				BD8CDF1221E1F7F900D0FFFF /* ViewController.swift */,
 				BD8CDF1421E1F7F900D0FFFF /* Main.storyboard */,
 				BD8CDF1721E1F7FA00D0FFFF /* Assets.xcassets */,
 				BD8CDF1921E1F7FA00D0FFFF /* LaunchScreen.storyboard */,
 				BD8CDF1C21E1F7FA00D0FFFF /* Info.plist */,
 			);
 			path = SwiftBootcamp;
+			sourceTree = "<group>";
+		};
+		BD8CDF2221E218F200D0FFFF /* QuizApp */ = {
+			isa = PBXGroup;
+			children = (
+				BD8CDF2521E2191600D0FFFF /* Model */,
+				BD8CDF2421E2191200D0FFFF /* View */,
+				BD8CDF2321E2190E00D0FFFF /* Controller */,
+			);
+			path = QuizApp;
+			sourceTree = "<group>";
+		};
+		BD8CDF2321E2190E00D0FFFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD8CDF2A21E21ACE00D0FFFF /* QuizViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD8CDF2421E2191200D0FFFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD8CDF2521E2191600D0FFFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD8CDF2621E2193300D0FFFF /* Question.swift */,
+				BD8CDF2821E2194C00D0FFFF /* QuestionBank.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +208,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD1D502721F2E434009D3DA6 /* note3.wav in Resources */,
+				BD1D502421F2E434009D3DA6 /* note1.wav in Resources */,
 				BD8CDF1B21E1F7FA00D0FFFF /* LaunchScreen.storyboard in Resources */,
 				BD8CDF1821E1F7FA00D0FFFF /* Assets.xcassets in Resources */,
 				BD8CDF1621E1F7F900D0FFFF /* Main.storyboard in Resources */,
+				BD1D502321F2E434009D3DA6 /* note6.wav in Resources */,
+				BD1D502821F2E434009D3DA6 /* note7.wav in Resources */,
+				BD1D502621F2E434009D3DA6 /* note2.wav in Resources */,
+				BD1D502221F2E434009D3DA6 /* note4.wav in Resources */,
+				BD1D502521F2E434009D3DA6 /* note5.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8CDF1321E1F7F900D0FFFF /* ViewController.swift in Sources */,
+				BD8CDF2721E2193300D0FFFF /* Question.swift in Sources */,
+				BD1D502A21F2E455009D3DA6 /* MusicViewController.swift in Sources */,
+				BD8CDF2B21E21ACE00D0FFFF /* QuizViewController.swift in Sources */,
+				BD8CDF2921E2194C00D0FFFF /* QuestionBank.swift in Sources */,
 				BD8CDF1121E1F7F800D0FFFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
