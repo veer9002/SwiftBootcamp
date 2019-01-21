@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2kV-0J-9MA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2kV-0J-9MA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,7 +84,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8BZ-Tx-sl5">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Chapter 14 - Bitcoin Ticket tracker " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8BZ-Tx-sl5">
                                                     <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -93,6 +93,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="feH-zp-Cvq" kind="show" id="ZSU-Vj-Wm8"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="c7h-wr-ayN" style="IBUITableViewCellStyleDefault" id="Y6H-xW-QCp">
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
@@ -209,6 +212,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BbF-yv-KYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1810.4000000000001" y="-289.20539730134936"/>
+        </scene>
+        <!--Bit Coin View Controller-->
+        <scene sceneID="4AD-QA-gRW">
+            <objects>
+                <viewController storyboardIdentifier="BitCoinViewController" id="feH-zp-Cvq" customClass="BitCoinViewController" customModule="SwiftBootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jGW-wg-16t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cNu-3l-a8J">
+                                <rect key="frame" x="84.5" y="294" width="206" height="79.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BitCoin Price Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjr-oH-f5x">
+                                        <rect key="frame" x="0.0" y="0.0" width="206" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1278" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n56-Y8-jpZ">
+                                        <rect key="frame" x="64.5" y="37.5" width="77" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-g7-UHR">
+                                <rect key="frame" x="0.0" y="489" width="375" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="S9S-zC-duF"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="feH-zp-Cvq" id="cpN-35-9pf"/>
+                                    <outlet property="delegate" destination="feH-zp-Cvq" id="RAj-Fh-qyL"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eJ9-g7-UHR" firstAttribute="bottom" secondItem="lqz-5Q-Wbw" secondAttribute="bottom" id="5zK-Rk-LKs"/>
+                            <constraint firstAttribute="trailing" secondItem="eJ9-g7-UHR" secondAttribute="trailing" id="81i-BE-35a"/>
+                            <constraint firstItem="cNu-3l-a8J" firstAttribute="centerY" secondItem="jGW-wg-16t" secondAttribute="centerY" id="BPN-ip-ly6"/>
+                            <constraint firstItem="cNu-3l-a8J" firstAttribute="centerX" secondItem="jGW-wg-16t" secondAttribute="centerX" id="edm-xq-Kiv"/>
+                            <constraint firstItem="eJ9-g7-UHR" firstAttribute="leading" secondItem="lqz-5Q-Wbw" secondAttribute="leading" id="k5Z-EN-Xq3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lqz-5Q-Wbw"/>
+                    </view>
+                    <connections>
+                        <outlet property="bitcoinPriceLabel" destination="n56-Y8-jpZ" id="gsF-Q5-jii"/>
+                        <outlet property="currencyPicker" destination="eJ9-g7-UHR" id="xkd-Q6-lgP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzj-bJ-f8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680.8" y="432.23388305847078"/>
         </scene>
         <!--Music View Controller-->
         <scene sceneID="e8I-hh-9Pp">
