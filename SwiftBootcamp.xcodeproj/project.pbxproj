@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		43A1BEE721F5981E0080C608 /* BitCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEE621F5981D0080C608 /* BitCoinViewController.swift */; };
+		43A1BEED21F5C3650080C608 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A1BEEC21F5C3650080C608 /* GoogleService-Info.plist */; };
+		43A1BEF321F5C7AA0080C608 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEEE21F5C7A80080C608 /* ChatViewController.swift */; };
+		43A1BEF421F5C7AA0080C608 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEEF21F5C7A90080C608 /* LogInViewController.swift */; };
+		43A1BEF521F5C7AA0080C608 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEF021F5C7A90080C608 /* RegisterViewController.swift */; };
+		43A1BEF721F5C7AA0080C608 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEF221F5C7AA0080C608 /* WelcomeViewController.swift */; };
+		43A1BEF921F5CA240080C608 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEF821F5CA240080C608 /* Message.swift */; };
 		8DC2C3357A38735AC27A1921 /* Pods_SwiftBootcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7016AED6752D0232F3ED1395 /* Pods_SwiftBootcamp.framework */; };
 		BD1D502221F2E434009D3DA6 /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501B21F2E434009D3DA6 /* note4.wav */; };
 		BD1D502321F2E434009D3DA6 /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501C21F2E434009D3DA6 /* note6.wav */; };
@@ -29,6 +35,12 @@
 /* Begin PBXFileReference section */
 		38F534BAD5346C846E375454 /* Pods-SwiftBootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBootcamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBootcamp/Pods-SwiftBootcamp.debug.xcconfig"; sourceTree = "<group>"; };
 		43A1BEE621F5981D0080C608 /* BitCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinViewController.swift; sourceTree = "<group>"; };
+		43A1BEEC21F5C3650080C608 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		43A1BEEE21F5C7A80080C608 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		43A1BEEF21F5C7A90080C608 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		43A1BEF021F5C7A90080C608 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		43A1BEF221F5C7AA0080C608 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		43A1BEF821F5CA240080C608 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7016AED6752D0232F3ED1395 /* Pods_SwiftBootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBootcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E9EC30D57EEDE28B8B9283 /* Pods-SwiftBootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBootcamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBootcamp/Pods-SwiftBootcamp.release.xcconfig"; sourceTree = "<group>"; };
 		BD1D501B21F2E434009D3DA6 /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
@@ -77,6 +89,42 @@
 				43A1BEE621F5981D0080C608 /* BitCoinViewController.swift */,
 			);
 			path = "BitCoin Tracker";
+			sourceTree = "<group>";
+		};
+		43A1BEE821F5C1AE0080C608 /* What'sAppClone */ = {
+			isa = PBXGroup;
+			children = (
+				43A1BEEB21F5C1D70080C608 /* Model */,
+				43A1BEEA21F5C1D50080C608 /* View */,
+				43A1BEE921F5C1C40080C608 /* Controller */,
+			);
+			path = "What'sAppClone";
+			sourceTree = "<group>";
+		};
+		43A1BEE921F5C1C40080C608 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43A1BEEE21F5C7A80080C608 /* ChatViewController.swift */,
+				43A1BEEF21F5C7A90080C608 /* LogInViewController.swift */,
+				43A1BEF021F5C7A90080C608 /* RegisterViewController.swift */,
+				43A1BEF221F5C7AA0080C608 /* WelcomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43A1BEEA21F5C1D50080C608 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43A1BEEB21F5C1D70080C608 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43A1BEF821F5CA240080C608 /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4A33E036AD98E722B153E282 /* Frameworks */ = {
@@ -139,6 +187,7 @@
 		BD8CDF0F21E1F7F800D0FFFF /* SwiftBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				43A1BEE821F5C1AE0080C608 /* What'sAppClone */,
 				43A1BEE521F597D50080C608 /* BitCoin Tracker */,
 				BD1D501621F2E3B3009D3DA6 /* MusicApp */,
 				BD8CDF2221E218F200D0FFFF /* QuizApp */,
@@ -147,6 +196,7 @@
 				BD8CDF1721E1F7FA00D0FFFF /* Assets.xcassets */,
 				BD8CDF1921E1F7FA00D0FFFF /* LaunchScreen.storyboard */,
 				BD8CDF1C21E1F7FA00D0FFFF /* Info.plist */,
+				43A1BEEC21F5C3650080C608 /* GoogleService-Info.plist */,
 			);
 			path = SwiftBootcamp;
 			sourceTree = "<group>";
@@ -253,6 +303,7 @@
 				BD1D502321F2E434009D3DA6 /* note6.wav in Resources */,
 				BD1D502821F2E434009D3DA6 /* note7.wav in Resources */,
 				BD1D502621F2E434009D3DA6 /* note2.wav in Resources */,
+				43A1BEED21F5C3650080C608 /* GoogleService-Info.plist in Resources */,
 				BD1D502221F2E434009D3DA6 /* note4.wav in Resources */,
 				BD1D502521F2E434009D3DA6 /* note5.wav in Resources */,
 			);
@@ -287,12 +338,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBootcamp/Pods-SwiftBootcamp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -306,9 +369,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A1BEF521F5C7AA0080C608 /* RegisterViewController.swift in Sources */,
 				BD8CDF2721E2193300D0FFFF /* Question.swift in Sources */,
+				43A1BEF721F5C7AA0080C608 /* WelcomeViewController.swift in Sources */,
 				BD1D502A21F2E455009D3DA6 /* MusicViewController.swift in Sources */,
 				BD8CDF2B21E21ACE00D0FFFF /* QuizViewController.swift in Sources */,
+				43A1BEF321F5C7AA0080C608 /* ChatViewController.swift in Sources */,
+				43A1BEF921F5CA240080C608 /* Message.swift in Sources */,
+				43A1BEF421F5C7AA0080C608 /* LogInViewController.swift in Sources */,
 				BD8CDF2921E2194C00D0FFFF /* QuestionBank.swift in Sources */,
 				BD8CDF1121E1F7F800D0FFFF /* AppDelegate.swift in Sources */,
 				43A1BEE721F5981E0080C608 /* BitCoinViewController.swift in Sources */,
