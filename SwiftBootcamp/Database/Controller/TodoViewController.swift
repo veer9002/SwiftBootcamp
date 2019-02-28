@@ -11,24 +11,13 @@ import UIKit
 class TodoViewController: UITableViewController {
 
     var array = [TodoList]()
-    let defaults = UserDefaults.standard
+    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let data = TodoList()
-        data.title = "One"
-        data.isCheck = true
-        array.append(data)
-        
-        let data1 = TodoList()
-        data1.title = "two"
-        array.append(data1)
-       
-        let data2 = TodoList()
-        data2.title = "three"
-        array.append(data2)
-        
+        print("Data file path ::: \(dataFilePath!)")
+        loadItems()
     }
     
     // MARK: Add new item
@@ -40,10 +29,9 @@ class TodoViewController: UITableViewController {
            
             let newItem = TodoList()
             newItem.title = textfield.text!
-
             self.array.append(newItem)
-            self.defaults.set(self.array, forKey: "TodoList")
-            self.tableView.reloadData()
+            
+            self.saveItems()
         }
         
         alert.addTextField { (todoTextField) in
@@ -54,6 +42,30 @@ class TodoViewController: UITableViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    // Data from Items.plist
+    func saveItems() {
+        let encoder = PropertyListEncoder()
+        
+        do {
+            let data = try encoder.encode(self.array)
+            try data.write(to: self.dataFilePath!)
+        } catch {
+            print("Error in storing in plist")
+        }
+        self.tableView.reloadData()
+    }
+    
+    func loadItems() {
+       
+        if let data = try? Data(contentsOf: self.dataFilePath!) {
+            let decoder = PropertyListDecoder()
+            do {
+                array = try decoder.decode([TodoList].self, from: data)
+            } catch {
+                print("Error::: \(error)")
+            }
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -89,7 +101,7 @@ class TodoViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         array[indexPath.row].isCheck = !array[indexPath.row].isCheck
-        self.tableView.reloadData()
+        saveItems()
     }
     
 
