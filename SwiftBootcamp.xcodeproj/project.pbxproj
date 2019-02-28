@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		432561182227B28C00CDE2C9 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432561172227B28C00CDE2C9 /* TodoViewController.swift */; };
+		4325611D2227D91300CDE2C9 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4325611C2227D91300CDE2C9 /* TodoList.swift */; };
 		43A1BEE721F5981E0080C608 /* BitCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEE621F5981D0080C608 /* BitCoinViewController.swift */; };
 		43A1BEED21F5C3650080C608 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A1BEEC21F5C3650080C608 /* GoogleService-Info.plist */; };
 		43A1BEF321F5C7AA0080C608 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEEE21F5C7A80080C608 /* ChatViewController.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		38F534BAD5346C846E375454 /* Pods-SwiftBootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBootcamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBootcamp/Pods-SwiftBootcamp.debug.xcconfig"; sourceTree = "<group>"; };
 		432561172227B28C00CDE2C9 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		4325611C2227D91300CDE2C9 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		43A1BEE621F5981D0080C608 /* BitCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinViewController.swift; sourceTree = "<group>"; };
 		43A1BEEC21F5C3650080C608 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43A1BEEE21F5C7A80080C608 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -88,9 +90,34 @@
 		432561162227B04700CDE2C9 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				432561172227B28C00CDE2C9 /* TodoViewController.swift */,
+				4325611B2227D8E800CDE2C9 /* Controller */,
+				4325611A2227D8E600CDE2C9 /* Views */,
+				432561192227D8E400CDE2C9 /* Models */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		432561192227D8E400CDE2C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4325611C2227D91300CDE2C9 /* TodoList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4325611A2227D8E600CDE2C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4325611B2227D8E800CDE2C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				432561172227B28C00CDE2C9 /* TodoViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		43A1BEE521F597D50080C608 /* BitCoin Tracker */ = {
@@ -382,6 +409,7 @@
 			files = (
 				43A1BEF521F5C7AA0080C608 /* RegisterViewController.swift in Sources */,
 				BD8CDF2721E2193300D0FFFF /* Question.swift in Sources */,
+				4325611D2227D91300CDE2C9 /* TodoList.swift in Sources */,
 				43A1BEF721F5C7AA0080C608 /* WelcomeViewController.swift in Sources */,
 				BD1D502A21F2E455009D3DA6 /* MusicViewController.swift in Sources */,
 				432561182227B28C00CDE2C9 /* TodoViewController.swift in Sources */,
