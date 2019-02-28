@@ -117,15 +117,15 @@
                                             <segue destination="Vic-F0-bBs" kind="show" id="thN-b2-MBI"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="4aT-qZ-n8h" style="IBUITableViewCellStyleDefault" id="jLg-YQ-hXn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="4aT-qZ-n8h" style="IBUITableViewCellStyleDefault" id="jLg-YQ-hXn">
                                         <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jLg-YQ-hXn" id="DlA-sd-Rwf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4aT-qZ-n8h">
-                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Chapter 18 - Coredata,realm,userdefaults" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4aT-qZ-n8h">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -133,6 +133,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="esk-mw-CSf" kind="push" id="EL9-hC-Tmr"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="YvL-ct-yA3" style="IBUITableViewCellStyleDefault" id="bUc-pz-Y6Y">
                                         <rect key="frame" x="0.0" y="264" width="375" height="44"/>
@@ -374,6 +377,41 @@
             </objects>
             <point key="canvasLocation" x="2612" y="-63"/>
         </scene>
+        <!--Todo View Controller-->
+        <scene sceneID="UC6-GQ-1lC">
+            <objects>
+                <tableViewController storyboardIdentifier="TodoViewController" id="esk-mw-CSf" customClass="TodoViewController" customModule="SwiftBootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yHY-qp-xYX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="jBk-hj-lPq">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jBk-hj-lPq" id="ufy-ZT-ZDq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="esk-mw-CSf" id="b7h-BN-nRB"/>
+                            <outlet property="delegate" destination="esk-mw-CSf" id="f4o-la-sRB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="SBn-qm-Ks8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aD4-Gb-Wfi">
+                            <connections>
+                                <action selector="addItem:" destination="esk-mw-CSf" id="cKg-tk-FBe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WR2-ZI-9WD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="-1014"/>
+        </scene>
         <!--Quiz View Controller-->
         <scene sceneID="xma-hI-3ab">
             <objects>
@@ -484,7 +522,7 @@
         <!--Welcome-->
         <scene sceneID="Axy-RJ-4OI">
             <objects>
-                <viewController storyboardIdentifier="welcomeVC" id="Vic-F0-bBs" customClass="WelcomeViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcomeVC" id="Vic-F0-bBs" customClass="WelcomeViewController" customModule="SwiftBootcamp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8SK-X2-Dj7"/>
                         <viewControllerLayoutGuide type="bottom" id="ykD-kL-rbn"/>
@@ -553,7 +591,7 @@
         <!--Register-->
         <scene sceneID="Dkq-uU-NbW">
             <objects>
-                <viewController storyboardIdentifier="registrationVC" id="ENU-F1-pmn" customClass="RegisterViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registrationVC" id="ENU-F1-pmn" customClass="RegisterViewController" customModule="SwiftBootcamp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SSJ-SN-iZ4"/>
                         <viewControllerLayoutGuide type="bottom" id="bKJ-uw-eaC"/>
@@ -642,7 +680,7 @@
         <!--Log In-->
         <scene sceneID="yZq-Bu-mS4">
             <objects>
-                <viewController storyboardIdentifier="logInVC" id="QiM-mq-2KM" customClass="LogInViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logInVC" id="QiM-mq-2KM" customClass="LogInViewController" customModule="SwiftBootcamp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="03X-39-uDk"/>
                         <viewControllerLayoutGuide type="bottom" id="Qg3-uR-uxo"/>
@@ -721,7 +759,7 @@
         <!--Flash Chat-->
         <scene sceneID="P8S-qK-FU2">
             <objects>
-                <viewController storyboardIdentifier="chatVC" id="ljB-WB-YDc" customClass="ChatViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chatVC" id="ljB-WB-YDc" customClass="ChatViewController" customModule="SwiftBootcamp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hEX-HD-Jch"/>
                         <viewControllerLayoutGuide type="bottom" id="Q67-sa-9uI"/>
