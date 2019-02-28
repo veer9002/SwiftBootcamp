@@ -11,10 +11,13 @@ import UIKit
 class TodoViewController: UITableViewController {
 
     var array = ["arr1","arr2","arr3","arr4"]
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let arrayData = self.defaults.value(forKey: "TodoList") as? [String] {
+            self.array = arrayData
+        }
     }
     
     // MARK: Add new item
@@ -24,6 +27,7 @@ class TodoViewController: UITableViewController {
         let alert = UIAlertController(title: "Add new item", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "Add new item", style: .default) { (alertAction) in
             self.array.append(textfield.text!)
+            self.defaults.set(self.array, forKey: "TodoList")
             self.tableView.reloadData()
         }
         
