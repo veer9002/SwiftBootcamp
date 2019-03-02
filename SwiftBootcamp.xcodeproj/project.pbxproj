@@ -17,7 +17,7 @@
 		43A1BEF921F5CA240080C608 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEF821F5CA240080C608 /* Message.swift */; };
 		8DC2C3357A38735AC27A1921 /* Pods_SwiftBootcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7016AED6752D0232F3ED1395 /* Pods_SwiftBootcamp.framework */; };
 		BD01A1D6222A9463002D5836 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01A1D5222A9463002D5836 /* ChatViewController.swift */; };
-		BD01A1D8222A94B5002D5836 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01A1D7222A94B5002D5836 /* MessageCell.swift */; };
+		BD01A1DC222A9852002D5836 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01A1DB222A9852002D5836 /* MessageCell.swift */; };
 		BD1D502221F2E434009D3DA6 /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501B21F2E434009D3DA6 /* note4.wav */; };
 		BD1D502321F2E434009D3DA6 /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501C21F2E434009D3DA6 /* note6.wav */; };
 		BD1D502421F2E434009D3DA6 /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501D21F2E434009D3DA6 /* note1.wav */; };
@@ -48,7 +48,7 @@
 		7016AED6752D0232F3ED1395 /* Pods_SwiftBootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBootcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E9EC30D57EEDE28B8B9283 /* Pods-SwiftBootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBootcamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBootcamp/Pods-SwiftBootcamp.release.xcconfig"; sourceTree = "<group>"; };
 		BD01A1D5222A9463002D5836 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		BD01A1D7222A94B5002D5836 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageCell.swift; path = "../../../../../Documents/SwiftBootcamp/SwiftBootcamp/What'sAppClone/View/MessageCell.swift"; sourceTree = "<group>"; };
+		BD01A1DB222A9852002D5836 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		BD1D501B21F2E434009D3DA6 /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
 		BD1D501C21F2E434009D3DA6 /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
 		BD1D501D21F2E434009D3DA6 /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		43A1BEEA21F5C1D50080C608 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BD01A1D7222A94B5002D5836 /* MessageCell.swift */,
+				BD01A1DB222A9852002D5836 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,9 +421,9 @@
 				43A1BEF421F5C7AA0080C608 /* LogInViewController.swift in Sources */,
 				BD01A1D6222A9463002D5836 /* ChatViewController.swift in Sources */,
 				BD8CDF2921E2194C00D0FFFF /* QuestionBank.swift in Sources */,
+				BD01A1DC222A9852002D5836 /* MessageCell.swift in Sources */,
 				BD8CDF1121E1F7F800D0FFFF /* AppDelegate.swift in Sources */,
 				43A1BEE721F5981E0080C608 /* BitCoinViewController.swift in Sources */,
-				BD01A1D8222A94B5002D5836 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -804,7 +804,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="553"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="71" id="v3N-Qb-V9K">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="71" id="v3N-Qb-V9K" customClass="MessageCell" customModule="SwiftBootcamp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="375" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v3N-Qb-V9K" id="VyD-MY-lQz">
@@ -854,6 +854,12 @@
                                                 <constraint firstItem="zF5-Kd-BZn" firstAttribute="leading" secondItem="VyD-MY-lQz" secondAttribute="leading" constant="16" id="xZn-nX-5oO"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImage" destination="Yof-0S-wTm" id="LCd-cg-Iyw"/>
+                                            <outlet property="lblMessageBody" destination="pAm-1l-BgQ" id="jJS-S6-xkA"/>
+                                            <outlet property="lblSender" destination="b7T-HK-c2L" id="THz-eu-Ymu"/>
+                                            <outlet property="messageBg" destination="zF5-Kd-BZn" id="Rwj-HN-nFA"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
