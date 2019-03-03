@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		432561182227B28C00CDE2C9 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432561172227B28C00CDE2C9 /* TodoViewController.swift */; };
-		4325611D2227D91300CDE2C9 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4325611C2227D91300CDE2C9 /* TodoList.swift */; };
 		43A1BEE721F5981E0080C608 /* BitCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEE621F5981D0080C608 /* BitCoinViewController.swift */; };
 		43A1BEED21F5C3650080C608 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A1BEEC21F5C3650080C608 /* GoogleService-Info.plist */; };
 		43A1BEF421F5C7AA0080C608 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEEF21F5C7A90080C608 /* LogInViewController.swift */; };
@@ -18,6 +17,7 @@
 		8DC2C3357A38735AC27A1921 /* Pods_SwiftBootcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7016AED6752D0232F3ED1395 /* Pods_SwiftBootcamp.framework */; };
 		BD01A1D6222A9463002D5836 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01A1D5222A9463002D5836 /* ChatViewController.swift */; };
 		BD01A1DC222A9852002D5836 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01A1DB222A9852002D5836 /* MessageCell.swift */; };
+		BD01A1DF222AA539002D5836 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD01A1DD222AA539002D5836 /* DataModel.xcdatamodeld */; };
 		BD1D502221F2E434009D3DA6 /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501B21F2E434009D3DA6 /* note4.wav */; };
 		BD1D502321F2E434009D3DA6 /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501C21F2E434009D3DA6 /* note6.wav */; };
 		BD1D502421F2E434009D3DA6 /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD1D501D21F2E434009D3DA6 /* note1.wav */; };
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		38F534BAD5346C846E375454 /* Pods-SwiftBootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBootcamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBootcamp/Pods-SwiftBootcamp.debug.xcconfig"; sourceTree = "<group>"; };
 		432561172227B28C00CDE2C9 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
-		4325611C2227D91300CDE2C9 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		43A1BEE621F5981D0080C608 /* BitCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinViewController.swift; sourceTree = "<group>"; };
 		43A1BEEC21F5C3650080C608 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43A1BEEF21F5C7A90080C608 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		74E9EC30D57EEDE28B8B9283 /* Pods-SwiftBootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBootcamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBootcamp/Pods-SwiftBootcamp.release.xcconfig"; sourceTree = "<group>"; };
 		BD01A1D5222A9463002D5836 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		BD01A1DB222A9852002D5836 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		BD01A1DE222AA539002D5836 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		BD1D501B21F2E434009D3DA6 /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
 		BD1D501C21F2E434009D3DA6 /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
 		BD1D501D21F2E434009D3DA6 /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		432561192227D8E400CDE2C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4325611C2227D91300CDE2C9 /* TodoList.swift */,
+				BD01A1DD222AA539002D5836 /* DataModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -412,10 +412,10 @@
 			files = (
 				43A1BEF521F5C7AA0080C608 /* RegisterViewController.swift in Sources */,
 				BD8CDF2721E2193300D0FFFF /* Question.swift in Sources */,
-				4325611D2227D91300CDE2C9 /* TodoList.swift in Sources */,
 				43A1BEF721F5C7AA0080C608 /* WelcomeViewController.swift in Sources */,
 				BD1D502A21F2E455009D3DA6 /* MusicViewController.swift in Sources */,
 				432561182227B28C00CDE2C9 /* TodoViewController.swift in Sources */,
+				BD01A1DF222AA539002D5836 /* DataModel.xcdatamodeld in Sources */,
 				BD8CDF2B21E21ACE00D0FFFF /* QuizViewController.swift in Sources */,
 				43A1BEF921F5CA240080C608 /* Message.swift in Sources */,
 				43A1BEF421F5C7AA0080C608 /* LogInViewController.swift in Sources */,
@@ -623,6 +623,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD01A1DD222AA539002D5836 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD01A1DE222AA539002D5836 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = BD01A1DE222AA539002D5836 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BD8CDF0521E1F7F800D0FFFF /* Project object */;
 }

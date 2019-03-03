@@ -385,9 +385,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="khw-7o-ImT">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="jBk-hj-lPq">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jBk-hj-lPq" id="ufy-ZT-ZDq">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -407,6 +412,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="khw-7o-ImT" id="jki-HO-6gQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WR2-ZI-9WD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -803,9 +811,14 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="29z-Sq-SsY" userLabel="Message Table View">
                                 <rect key="frame" x="0.0" y="64" width="375" height="553"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="lcm-qP-VFT">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="71" id="v3N-Qb-V9K" customClass="MessageCell" customModule="SwiftBootcamp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="375" height="71"/>
+                                        <rect key="frame" x="0.0" y="66" width="375" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v3N-Qb-V9K" id="VyD-MY-lQz">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
@@ -888,12 +901,13 @@
                         <outlet property="heightConstraint" destination="SBw-YN-iMr" id="cow-xW-3Vq"/>
                         <outlet property="messageTableView" destination="29z-Sq-SsY" id="SQQ-Up-m3F"/>
                         <outlet property="messageTextfield" destination="crF-bt-fzj" id="JUu-PP-g4l"/>
+                        <outlet property="searchBar" destination="29z-Sq-SsY" id="83P-KS-M5i"/>
                         <outlet property="sendButton" destination="Oz8-UW-Wot" id="G8C-No-FDO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NW5-ui-ivk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2016.8" y="1301.1994002998501"/>
+            <point key="canvasLocation" x="2092" y="1309"/>
         </scene>
     </scenes>
     <resources>

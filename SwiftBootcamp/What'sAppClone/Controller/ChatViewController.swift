@@ -20,11 +20,11 @@ class ChatViewController: UIViewController {
     @IBOutlet var sendButton: UIButton!
     @IBOutlet var messageTextfield: UITextField!
     @IBOutlet var messageTableView: UITableView!
+    @IBOutlet weak var searchBar: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //TODO: Set yourself as the delegate and datasource here:
         messageTableView.rowHeight = UITableView.automaticDimension
         messageTableView.estimatedRowHeight = UITableView.automaticDimension
         
