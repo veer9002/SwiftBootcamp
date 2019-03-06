@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4324E94E222F98220032F648 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4324E94D222F98210032F648 /* Inceptionv3.mlmodel */; };
+		4324E950222F99410032F648 /* ImageRecogniserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4324E94F222F99410032F648 /* ImageRecogniserVC.swift */; };
 		432561182227B28C00CDE2C9 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432561172227B28C00CDE2C9 /* TodoViewController.swift */; };
 		43A1BEE721F5981E0080C608 /* BitCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1BEE621F5981D0080C608 /* BitCoinViewController.swift */; };
 		43A1BEED21F5C3650080C608 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A1BEEC21F5C3650080C608 /* GoogleService-Info.plist */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		38F534BAD5346C846E375454 /* Pods-SwiftBootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBootcamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBootcamp/Pods-SwiftBootcamp.debug.xcconfig"; sourceTree = "<group>"; };
+		4324E94D222F98210032F648 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		4324E94F222F99410032F648 /* ImageRecogniserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecogniserVC.swift; sourceTree = "<group>"; };
 		432561172227B28C00CDE2C9 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		43A1BEE621F5981D0080C608 /* BitCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinViewController.swift; sourceTree = "<group>"; };
 		43A1BEEC21F5C3650080C608 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 				74E9EC30D57EEDE28B8B9283 /* Pods-SwiftBootcamp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4324E94C222F94D30032F648 /* Machine Learning */ = {
+			isa = PBXGroup;
+			children = (
+				4324E94D222F98210032F648 /* Inceptionv3.mlmodel */,
+				4324E94F222F99410032F648 /* ImageRecogniserVC.swift */,
+			);
+			path = "Machine Learning";
 			sourceTree = "<group>";
 		};
 		432561162227B04700CDE2C9 /* Database */ = {
@@ -227,6 +240,7 @@
 		BD8CDF0F21E1F7F800D0FFFF /* SwiftBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				4324E94C222F94D30032F648 /* Machine Learning */,
 				432561162227B04700CDE2C9 /* Database */,
 				43A1BEE821F5C1AE0080C608 /* What'sAppClone */,
 				43A1BEE521F597D50080C608 /* BitCoin Tracker */,
@@ -420,10 +434,12 @@
 				43A1BEF921F5CA240080C608 /* Message.swift in Sources */,
 				43A1BEF421F5C7AA0080C608 /* LogInViewController.swift in Sources */,
 				BD01A1D6222A9463002D5836 /* ChatViewController.swift in Sources */,
+				4324E94E222F98220032F648 /* Inceptionv3.mlmodel in Sources */,
 				BD8CDF2921E2194C00D0FFFF /* QuestionBank.swift in Sources */,
 				BD01A1DC222A9852002D5836 /* MessageCell.swift in Sources */,
 				BD8CDF1121E1F7F800D0FFFF /* AppDelegate.swift in Sources */,
 				43A1BEE721F5981E0080C608 /* BitCoinViewController.swift in Sources */,
+				4324E950222F99410032F648 /* ImageRecogniserVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2689CCPU47;
 				INFOPLIST_FILE = SwiftBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,6 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2689CCPU47;
 				INFOPLIST_FILE = SwiftBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

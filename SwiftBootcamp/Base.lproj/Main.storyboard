@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2kV-0J-9MA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2kV-0J-9MA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -137,15 +137,15 @@
                                             <segue destination="esk-mw-CSf" kind="push" id="EL9-hC-Tmr"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="YvL-ct-yA3" style="IBUITableViewCellStyleDefault" id="bUc-pz-Y6Y">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="YvL-ct-yA3" style="IBUITableViewCellStyleDefault" id="bUc-pz-Y6Y">
                                         <rect key="frame" x="0.0" y="264" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bUc-pz-Y6Y" id="0vE-69-2gx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YvL-ct-yA3">
-                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Machine Learning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YvL-ct-yA3">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -153,6 +153,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="n20-pf-cX4" kind="push" id="zm3-68-ueH"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Hl8-Ij-Ev9" style="IBUITableViewCellStyleDefault" id="UrW-1o-lQh">
                                         <rect key="frame" x="0.0" y="308" width="375" height="44"/>
@@ -375,7 +378,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFo-vo-FXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2612" y="-63"/>
+            <point key="canvasLocation" x="2817" y="-54"/>
+        </scene>
+        <!--Image RecogniserVC-->
+        <scene sceneID="cXr-LO-HTv">
+            <objects>
+                <viewController storyboardIdentifier="ImageRecogniserVC" id="n20-pf-cX4" customClass="ImageRecogniserVC" customModule="SwiftBootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NL6-oK-aSq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i3A-us-rZg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i3A-us-rZg" firstAttribute="bottom" secondItem="lHC-eL-cS6" secondAttribute="bottom" id="YH1-yZ-B5U"/>
+                            <constraint firstItem="i3A-us-rZg" firstAttribute="leading" secondItem="lHC-eL-cS6" secondAttribute="leading" id="bUr-RA-7CM"/>
+                            <constraint firstItem="i3A-us-rZg" firstAttribute="top" secondItem="lHC-eL-cS6" secondAttribute="top" id="olm-aJ-Ql6"/>
+                            <constraint firstItem="i3A-us-rZg" firstAttribute="trailing" secondItem="lHC-eL-cS6" secondAttribute="trailing" id="yKy-Aw-gEF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lHC-eL-cS6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N3m-8q-4XO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="cHK-rf-sqU">
+                            <connections>
+                                <action selector="cameraTapped:" destination="n20-pf-cX4" id="K0Y-P2-44K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="i3A-us-rZg" id="kA4-KW-UV3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ab2-Bt-CGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1245.5999999999999" y="-1014.2428785607198"/>
         </scene>
         <!--Todo View Controller-->
         <scene sceneID="UC6-GQ-1lC">
@@ -418,7 +457,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WR2-ZI-9WD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1746" y="-1014"/>
+            <point key="canvasLocation" x="2145" y="-1014"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="xma-hI-3ab">
@@ -507,7 +546,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIC-oc-lcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2557.5999999999999" y="-732.68365817091455"/>
+            <point key="canvasLocation" x="2818" y="-712"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="exJ-fH-bgH">
@@ -762,7 +801,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PhW-Ql-LKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="468"/>
+            <point key="canvasLocation" x="1305" y="468"/>
         </scene>
         <!--Flash Chat-->
         <scene sceneID="P8S-qK-FU2">
