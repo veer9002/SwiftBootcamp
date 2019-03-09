@@ -14,6 +14,11 @@ class TodoViewController: UITableViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var array = [TodoList]()
+    var selectedCategory: Category? {
+        didSet {
+            loadItems()
+        }
+    }
 //    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -22,7 +27,7 @@ class TodoViewController: UITableViewController {
         
         self.searchBar.delegate = self
         print("Data file path ::: \(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))")
-        loadItems()
+//        loadItems()
     }
     
     // MARK: Add new item
@@ -35,6 +40,7 @@ class TodoViewController: UITableViewController {
             let newItem = TodoList(context: self.context)
             newItem.title = textfield.text!
             newItem.isChecked = false
+            newItem.parentCategory = self.selectedCategory
             self.array.append(newItem)
             
             self.saveItems()

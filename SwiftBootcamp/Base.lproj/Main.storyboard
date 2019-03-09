@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2kV-0J-9MA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2kV-0J-9MA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -134,7 +134,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="esk-mw-CSf" kind="push" id="EL9-hC-Tmr"/>
+                                            <segue destination="DnC-li-Cvv" kind="push" id="nYL-6J-pio"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="YvL-ct-yA3" style="IBUITableViewCellStyleDefault" id="bUc-pz-Y6Y">
@@ -416,6 +416,44 @@
             </objects>
             <point key="canvasLocation" x="1245.5999999999999" y="-1014.2428785607198"/>
         </scene>
+        <!--Category View Controller-->
+        <scene sceneID="o8I-zL-llU">
+            <objects>
+                <tableViewController storyboardIdentifier="CategoryViewController" id="DnC-li-Cvv" customClass="CategoryViewController" customModule="SwiftBootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sr3-v8-12Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="035-aB-L14">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="035-aB-L14" id="PPv-I1-eZR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DnC-li-Cvv" id="1bG-Mk-AT0"/>
+                            <outlet property="delegate" destination="DnC-li-Cvv" id="Vrt-vR-Yju"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="QxN-Hd-xwL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p0y-UA-4lE">
+                            <connections>
+                                <action selector="addCategory:" destination="DnC-li-Cvv" id="oLa-6E-Lhj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="esk-mw-CSf" kind="show" identifier="goToItems" id="jId-0o-yq5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cA7-nR-3Co" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="-1397"/>
+        </scene>
         <!--Todo View Controller-->
         <scene sceneID="UC6-GQ-1lC">
             <objects>
@@ -457,7 +495,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WR2-ZI-9WD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2145" y="-1014"/>
+            <point key="canvasLocation" x="2681" y="-1397"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="xma-hI-3ab">

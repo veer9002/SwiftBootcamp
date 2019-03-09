@@ -35,6 +35,8 @@
 		BD8CDF2721E2193300D0FFFF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CDF2621E2193300D0FFFF /* Question.swift */; };
 		BD8CDF2921E2194C00D0FFFF /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CDF2821E2194C00D0FFFF /* QuestionBank.swift */; };
 		BD8CDF2B21E21ACE00D0FFFF /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CDF2A21E21ACE00D0FFFF /* QuizViewController.swift */; };
+		BDA982EB2233D3DB00ABC25D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA982EA2233D3DB00ABC25D /* CategoryViewController.swift */; };
+		BDA982EE2233D66400ABC25D /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA982ED2233D66400ABC25D /* UIKit+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		BD8CDF2621E2193300D0FFFF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		BD8CDF2821E2194C00D0FFFF /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		BD8CDF2A21E21ACE00D0FFFF /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		BDA982EA2233D3DB00ABC25D /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		BDA982ED2233D66400ABC25D /* UIKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 		4325611B2227D8E800CDE2C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BDA982EA2233D3DB00ABC25D /* CategoryViewController.swift */,
 				432561172227B28C00CDE2C9 /* TodoViewController.swift */,
 			);
 			path = Controller;
@@ -240,6 +245,7 @@
 		BD8CDF0F21E1F7F800D0FFFF /* SwiftBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				BDA982EC2233D5EE00ABC25D /* Extensions */,
 				4324E94C222F94D30032F648 /* Machine Learning */,
 				432561162227B04700CDE2C9 /* Database */,
 				43A1BEE821F5C1AE0080C608 /* What'sAppClone */,
@@ -288,6 +294,14 @@
 				BD8CDF2821E2194C00D0FFFF /* QuestionBank.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BDA982EC2233D5EE00ABC25D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BDA982ED2233D66400ABC25D /* UIKit+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +440,7 @@
 			files = (
 				43A1BEF521F5C7AA0080C608 /* RegisterViewController.swift in Sources */,
 				BD8CDF2721E2193300D0FFFF /* Question.swift in Sources */,
+				BDA982EB2233D3DB00ABC25D /* CategoryViewController.swift in Sources */,
 				43A1BEF721F5C7AA0080C608 /* WelcomeViewController.swift in Sources */,
 				BD1D502A21F2E455009D3DA6 /* MusicViewController.swift in Sources */,
 				432561182227B28C00CDE2C9 /* TodoViewController.swift in Sources */,
@@ -437,6 +452,7 @@
 				4324E94E222F98220032F648 /* Inceptionv3.mlmodel in Sources */,
 				BD8CDF2921E2194C00D0FFFF /* QuestionBank.swift in Sources */,
 				BD01A1DC222A9852002D5836 /* MessageCell.swift in Sources */,
+				BDA982EE2233D66400ABC25D /* UIKit+Extensions.swift in Sources */,
 				BD8CDF1121E1F7F800D0FFFF /* AppDelegate.swift in Sources */,
 				43A1BEE721F5981E0080C608 /* BitCoinViewController.swift in Sources */,
 				4324E950222F99410032F648 /* ImageRecogniserVC.swift in Sources */,
