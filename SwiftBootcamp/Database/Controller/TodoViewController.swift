@@ -93,8 +93,15 @@ class TodoViewController: UITableViewController {
 //    }
     
     // from core data
-    func loadItems(with request: NSFetchRequest<TodoList> = TodoList.fetchRequest()) {
+    func loadItems(with request: NSFetchRequest<TodoList> = TodoList.fetchRequest(), predicate: NSPredicate? = nil) {
         
+        let categoryPredicate = NSPredicate(format: "parentCategory.name MATCHES %@", (self.selectedCategory?.name!)!)
+        if let additionalPredicate = predicate {
+            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, additionalPredicate])
+        } else {
+            request.predicate = categoryPredicate
+        }
+
         do {
           array = try context.fetch(request)
         } catch {
@@ -152,12 +159,13 @@ class TodoViewController: UITableViewController {
 extension TodoViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let request: NSFetchRequest<TodoList> = TodoList.fetchRequest()
-        request.predicate = NSPredicate(format: "title CONTAINS %@", self.searchBar.text!)
+//        request.predicate = NSPredicate(format: "title CONTAINS %@", self.searchBar.text!)
+        let predicate = NSPredicate(format: "title CONTAINS %@", self.searchBar.text!)
         
         let sortedDescr = NSSortDescriptor(key: "title", ascending: true)
         request.sortDescriptors = [sortedDescr]
         
-        loadItems(with: request)
+        loadItems(with: request, predicate: predicate)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
